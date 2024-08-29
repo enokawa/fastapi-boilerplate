@@ -16,8 +16,9 @@ defaults:
 
 jobs:
   test:
-    name: python-linux
+    name: test
     runs-on: ubuntu-latest
+    timeout-minutes: 1
     env:
       UV_CACHE_DIR: /tmp/.uv-cache
 
