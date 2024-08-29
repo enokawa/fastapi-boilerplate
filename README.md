@@ -1,5 +1,9 @@
 # fastapi-boilerplate
 
+## Prerequisite
+
+- [uv](https://docs.astral.sh/uv/)
+
 ## Init
 
 ```sh
