@@ -1,6 +1,15 @@
-def main() -> None:
-    print("Hello from fastapi-boilerplate!")
+from typing import Dict
+
+from fastapi import FastAPI
+
+app = FastAPI()
 
 
-if __name__ == "__main__":
-    main()
+@app.get("/")
+async def read_root() -> Dict:
+    return {"Hello": "World"}
+
+
+@app.get("/items/{item_id}")
+async def read_item(item_id: int, q: str | None = None) -> Dict:
+    return {"item_id": item_id, "q": q}
