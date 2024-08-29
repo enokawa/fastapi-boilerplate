@@ -4,7 +4,7 @@
 
 - [uv](https://docs.astral.sh/uv/)
 
-## Init
+## Set up
 
 ```sh
 uv sync
@@ -26,4 +26,10 @@ uv run pytest
 
 ```sh
 docker compose up -d
+```
+
+or
+
+```sh
+docker compose watch
 ```
