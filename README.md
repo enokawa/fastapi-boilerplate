@@ -6,7 +6,7 @@
 uv sync
 ```
 
-## Run
+## Run API
 
 ```sh
 uv run fastapi dev app/main.py
@@ -16,4 +16,10 @@ uv run fastapi dev app/main.py
 
 ```sh
 uv run pytest
+```
+
+## Run API Using Docker Compose
+
+```sh
+docker compose up -d
 ```
