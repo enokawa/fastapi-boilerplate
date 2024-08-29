@@ -27,3 +27,9 @@ uv run pytest
 ```sh
 docker compose up -d
 ```
+
+or
+
+```sh
+docker compose watch
+```
