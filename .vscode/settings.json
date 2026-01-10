@@ -7,16 +7,14 @@
     "**/__pycache__": true,
     "**/.venv": true,
   },
-  "ruff.importStrategy": "fromEnvironment",
   "mypy-type-checker.importStrategy": "fromEnvironment",
   "mypy-type-checker.args": ["--config-file=pyproject.toml"],
   "[python]": {
     "editor.formatOnSave": true,
-
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
-      "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
     },
-    "editor.defaultFormatter": "charliermarsh.ruff"
   }
 }
