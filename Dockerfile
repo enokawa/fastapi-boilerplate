@@ -1,6 +1,6 @@
 FROM python:3.14.5-slim-bookworm
 
-COPY --from=ghcr.io/astral-sh/uv:0.9.24 /uv /bin/uv
+COPY --from=ghcr.io/astral-sh/uv:0.11.17-python3.14-alpine /uv /bin/uv
 
 WORKDIR /app
 
